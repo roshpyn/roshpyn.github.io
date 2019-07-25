@@ -9,3 +9,13 @@ function showOrHideDdmenu(){
         ddmenu.display = "none"
     }
 }
+function doOnResize() {
+    let ddmenu = document.getElementById("menu-list").style 
+    if (window.innerWidth > 800)
+    {
+        ddmenu.display = "block";
+    }
+    else{
+        ddmenu.display = "none"
+    }
+}
