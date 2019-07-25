@@ -1,0 +1,115 @@
+
+* {
+  box-sizing:border-box;
+  
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif
+}
+:root {
+  --nav-bg-color: #0E494E;
+  --nav-color: #FFFFFF;
+  --nav-list-color: #417C81;
+  
+  --nav-bar-height: 50px;
+  --nav-font-size: 40px;
+  --nav-border-color: #013034;  
+  --footer-height: 100px;
+
+}
+#menu-checkbox {
+  display: none;  
+}
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: var(--nav-bar-height) 1fr var(--footer-height); 
+  width: 100%;
+}
+h1 {
+  font-size: 1em;
+  margin: 0;
+  display: inline;
+}
+
+#title-bar{
+  background-color: var(--nav-bg-color);
+  color: var(--nav-color);
+  height: var(--nav-bar-height);
+}
+
+.menu-links {
+  color: inherit;
+  text-decoration: inherit;
+}
+/*  mobile navigation bar */
+@media only screen and (max-width: 768px)  {
+  #site-navigation { 
+    text-align: center;
+    font-size: var(--nav-font-size);
+    min-width: 320px;
+  }
+  
+  #menu {
+    float: right;
+    display: block;
+  }
+  #menu-icon {
+    color: var(--nav-color);
+    font-size: 1em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: var(--nav-bar-height);
+    height: var(--nav-bar-height);
+  }
+  #menu-checkbox:checked ~ #menu-icon {
+    background-color: var(--nav-list-color);
+  }
+
+  .menu-list{
+    border-top: 2px solid var(--nav-border-color);
+  }
+  ul#menu-list  {
+    background-color: var(--nav-list-color);
+    color: var(--nav-color);
+    font-size: 1em;
+
+    list-style-type: none;
+
+    width: 100%;
+    position: absolute;
+    top: var(--nav-bar-height);
+    left: 0;
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+}
+/* desktop navigation bar */
+@media only screen and (min-width: 768px){
+  #site-navigation {
+    font-size: var(--nav-font-size);
+  }
+  #menu {
+    display: none;
+  }
+  ul#menu-list {
+    
+    color: var(--nav-color);
+    font-size: 0.9em;
+    display: inline;
+    float: right;
+    margin-right: 0.8em;
+  }  
+  ul#menu-list li {
+    display: inline;
+    margin-right: 0.5em
+  } 
+  ul#menu-list li:hover {
+    background-color: var(--nav-list-color);
+    border-radius: 8px;
+  }
+}
