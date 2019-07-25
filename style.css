@@ -102,12 +102,13 @@ h1 {
   #menu {
     display: none;
   }
-  ul#menu-list {
-    
+  #menu-list {
+    float: right;
+  }
+  ul#menu-list { 
     color: var(--nav-color);
     font-size: 1em;
     display: inline;
-    float: right;
     margin-right: 0.8em;
   }  
   ul#menu-list li {
