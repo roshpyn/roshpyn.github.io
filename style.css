@@ -81,7 +81,9 @@ h1 {
     display: none;
   }
   ul#menu-list li {
-    background-image: linear-gradient(var(--nav-bg-color) 8%,var(--nav-list-color));
+    /* background-image: linear-gradient(var(--nav-bg-color) 8%,var(--nav-list-color)); */
+    background-color: var(--nav-list-color);
+    border-bottom: 3px solid ;
   }
   main {
     width: 100%;
