@@ -14,7 +14,7 @@
   --nav-list-color: #417C81;
   
   --nav-bar-height: 50px;
-  --nav-font-size: 40px;
+  --nav-font-size: 25px;
   --nav-border-color: #013034;  
   --footer-height: 100px;
 
@@ -32,6 +32,8 @@ h1 {
   font-size: 1em;
   margin: 0;
   display: inline;
+  vertical-align: middle;
+  line-height: 2em;
 }
 
 #title-bar{
@@ -42,6 +44,8 @@ h1 {
 .menu-links {
   color: inherit;
   text-decoration: inherit;
+  vertical-align: middle;
+  line-height: 2em;
 }
 /*  mobile navigation bar */
 @media only screen and (max-width: 768px)  {
@@ -57,7 +61,7 @@ h1 {
   }
   #menu-icon {
     color: var(--nav-color);
-    font-size: 1em;
+    font-size: 40px;
     position: absolute;
     right: 0;
     text-align: center;
@@ -79,6 +83,7 @@ h1 {
     top: var(--nav-bar-height);
     left: 0;
     display: none;
+
   }
   ul#menu-list li {
     /* background-image: linear-gradient(var(--nav-bg-color) 8%,var(--nav-list-color)); */
