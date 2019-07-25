@@ -41,11 +41,12 @@ h1 {
   color: var(--nav-color);
   height: var(--nav-bar-height);
 }
+
 .menu-links {
   color: inherit;
   text-decoration: inherit;
   vertical-align: middle;
-  line-height: 2em;
+  font-size: 0.7em;
 }
 /*  mobile navigation bar */
 @media only screen and (max-width: 768px)  {
@@ -89,6 +90,7 @@ h1 {
     /* background-image: linear-gradient(var(--nav-bg-color) 8%,var(--nav-list-color)); */
     background-color: var(--nav-list-color);
     border-bottom: 3px solid ;
+    line-height: 1.5em;
   }
   main {
     width: 100%;
